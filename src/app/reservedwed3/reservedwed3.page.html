@@ -1,0 +1,64 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-card routerLink="/home">
+    <img class ="logo" src="assets/banner.jpg">
+    </ion-card>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <style>
+      .hid {
+        text-align: center;
+      }
+    </style>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="flex">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Wedding Application</ion-card-title>
+  
+      </ion-card-header>
+    
+      <ion-button fill="clear" routerLink="/reservedwed2">
+        <ion-icon name="return-up-back-outline"></ion-icon> Back
+      </ion-button>
+      <ion-card-content>
+        <ion-label>Photo of Bride</ion-label>
+        <br>
+        <ion-button>Choose file...</ion-button>
+        <br>
+
+        <ion-item>
+          <ion-label position="floating">Bride First Name*</ion-label>
+          <ion-input type="FirstName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Bride Last Name*</ion-label>
+          <ion-input type="LastName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Phone*</ion-label>
+          <ion-input type="Phone"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email*</ion-label>
+          <ion-input type="Email"></ion-input>
+        </ion-item>
+
+        <br>
+
+
+        <h5>Please refer to Wedding Tab for info on wedding guidlines and agreement.</h5>
+
+        <br>  
+
+        <ion-button size="full" routerLink="/wedding">Submit Information</ion-button>
+
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>

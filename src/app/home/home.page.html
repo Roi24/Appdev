@@ -1,0 +1,66 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-card routerLink="/home">
+    <img class ="logo" src="assets/banner.jpg">
+    </ion-card>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <style>
+      .hid {
+        text-align: center;
+      }
+    </style>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="home">
+
+  <img src="assets/home.jpg" alt="Slide 1">
+
+
+  <img src="assets/home2.jpg">
+  </div>
+  <div id="container">
+
+    <h3>Welcome</h3>
+    <a routerLink="/massched">View mass schedule</a>
+  </div>
+  <div class="f1">
+    <ion-row>
+      <li>Baptism</li>
+      <li>Weddings</li>
+      <li>Columbarium</li>
+    </ion-row>
+    <br>
+    <ion-button routerLink="/wedding">View Availability</ion-button>
+    <br>
+    <ion-grid>
+      <ion-row>
+        <ion-col routerLink="/baptismal">Baptism</ion-col>
+        <ion-col routerLink="/wedding">Weddings</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="Colum" routerLink="/">Columbariium</ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+  
+  <hr class="line">
+  <img src="/assets/logo.png">
+  <br>
+  <p class = "contact">you may contact us at:</p>
+  <p class = "number">(043) 723-1484</p>
+  <p class = "number">0905-207-0035</p>
+  <p class = "number">0922-429-6679</p>
+
+  <ion-icon name="logo-facebook" class="facebook"> </ion-icon>
+  <a class="link" href="https://www.facebook.com/BasilicaBatangasCity/">Basilica Of Immaculate Conception Batangas City</a>
+</ion-content>

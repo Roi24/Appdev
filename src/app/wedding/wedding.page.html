@@ -1,0 +1,68 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-card routerLink="/home">
+    <img class ="logo" src="assets/banner.jpg">
+    </ion-card>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <style>
+      .hid {
+        text-align: center;
+      }
+    </style>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+
+  <h2>Wedding Calendar</h2>
+  <hr class="line">
+  <h4>reservation request</h4>
+  <hr class="line">
+  <p>
+    Prior to reserving your wedding date below, please read through the steps on how to reserve your wedding.
+  </p>
+
+  <ion-button routerLink="/steps">STEPS TO RESERVE YOUR WEDDING</ion-button>
+
+  <p>
+    To check the availability of the church for your wedding and request for request for reservation on your wedding date, please set an appointment below. Please note that the reservation request may only be confirmed after visiting the parish to formally block your requested wedding schedule. kindly do so within 7 days after your request; otherwise, the reservation will automatically be cancelled.
+  </p>
+
+  <ion-grid [fixed] = " true">
+    <ion-row>
+      <ion-col>Choose Appointment</ion-col>
+      <ion-col>Your Info</ion-col>
+      <ion-col>Confirmation</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list>
+    <ion-item>
+      <ion-select label="Default label" placeholder="Wedding">
+        <ion-select-option value="wedding">Wedding</ion-select-option>
+        <ion-select-option value="baptismal">Baptismal</ion-select-option>
+        <ion-select-option value="mass">Mass</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  
+  <br>
+  <ion-datetime></ion-datetime>
+
+  <br>
+
+  <ion-button routerLink="/reservedwed">Wedding Reservation Request</ion-button>
+
+  <br>
+  
+  <p>*For Office Schedule</p>
+  <p>*For Confessions, Please head on this</p>
+
+  <hr class="line">
+  <img class="lb" src="/assets/logo.png">
+
+
+</ion-content>
